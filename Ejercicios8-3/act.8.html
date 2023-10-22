@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuadrante de Coordenada</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt("Introduce la coordenada X: "));
+        let y = parseInt(prompt("Introduce la coordenada Y: "));
+        
+        if (x > 0 && y > 0) {
+            document.write("La coordenada se encuentra en el primer cuadrante.");
+        } else if (x < 0 && y > 0) {
+            document.write("La coordenada se encuentra en el segundo cuadrante.");
+        } else if (x < 0 && y < 0) {
+            document.write("La coordenada se encuentra en el tercer cuadrante.");
+        } else if (x > 0 && y < 0) {
+            document.write("La coordenada se encuentra en el cuarto cuadrante.");
+        } else {
+            document.write("La coordenada se encuentra en un eje o en el origen.");
+        }
+    </script>
+</body>
+</html>

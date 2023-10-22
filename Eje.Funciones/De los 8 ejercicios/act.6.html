@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de Llantas</title>
+</head>
+<body>
+    <script>
+        function calcularCostoCompraLlantas() {
+            let nombreCliente = prompt("Introduce el nombre del cliente: ");
+            let cantidadLlantas = parseInt(prompt("Introduce la cantidad de llantas compradas: "));
+            let costoPorUnidad = (cantidadLlantas < 12) ? 700 : 480;
+            let totalCompra = cantidadLlantas * costoPorUnidad;
+
+            document.write("Cliente: " + nombreCliente + "<br>");
+            document.write("Cantidad de llantas compradas: " + cantidadLlantas + "<br>");
+            document.write("Costo por unidad: $" + costoPorUnidad + "<br>");
+            document.write("Total de la compra: $" + totalCompra);
+        }
+
+        calcularCostoCompraLlantas();
+    </script>
+</body>
+</html>

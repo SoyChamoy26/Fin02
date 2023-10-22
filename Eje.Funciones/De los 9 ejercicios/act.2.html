@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <script>
+        function calcularTotalCompra() {
+            let precioProducto = parseInt(prompt("Introduce el precio del producto: "));
+            let cantidadProductos = parseInt(prompt("¿Cuántos productos quieres llevar?"));
+            let totalCompra = precioProducto * cantidadProductos;
+            document.write("El total de su compra es: " + totalCompra + "$");
+        }
+        
+        calcularTotalCompra();
+    </script>
+</body>
+</html>

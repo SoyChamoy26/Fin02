@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Método de Pago</title>
+</head>
+<body>
+    <script>
+        function determinarMetodoPago() {
+            let nombreCliente = prompt("Introduce el nombre del cliente: ");
+            let cantidadArticulos = parseInt(prompt("Introduce la cantidad de artículos comprados: "));
+            
+            if (cantidadArticulos < 5) {
+                document.write("Cliente: " + nombreCliente + "<br>");
+                document.write("Cantidad de artículos comprados: " + cantidadArticulos + "<br>");
+                document.write("Método de pago: Efectivo");
+            } else if (cantidadArticulos >= 5 && cantidadArticulos < 12) {
+                document.write("Cliente: " + nombreCliente + "<br>");
+                document.write("Cantidad de artículos comprados: " + cantidadArticulos + "<br>");
+                document.write("Método de pago: Tarjeta");
+            } else {
+                document.write("Cliente: " + nombreCliente + "<br>");
+                document.write("Cantidad de artículos comprados: " + cantidadArticulos + "<br>");
+                document.write("Método de pago: Cheque");
+            }
+        }
+
+        determinarMetodoPago();
+    </script>
+</body>
+</html>

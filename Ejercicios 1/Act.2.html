@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipotenusa</title>
+</head>
+<body>
+   <script>
+    let catetoOpuesto = parseFloat(prompt("Introduce la longitud del cateto opuesto: "));
+    let catetoAdyacente = parseFloat(prompt("Introduce la longitud del cateto adyacente: "));
+
+    let hipotenusa = Math.sqrt(catetoOpuesto ** 2 + catetoAdyacente ** 2);
+
+    document.write("<h1>Cálculo de Hipotenusa</h1>");
+    document.write("<p>Cateto Opuesto: " + catetoOpuesto + "</p>");
+    document.write("<p>Cateto Adyacente: " + catetoAdyacente + "</p>");
+    document.write("<p>Hipotenusa: " + hipotenusa.toFixed(2) + "</p>");
+   </script> 
+</body>
+</html>

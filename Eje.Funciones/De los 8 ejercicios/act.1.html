@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparar Números</title>
+</head>
+<body>
+    <script>
+        function compararNumeros() {
+            let numero1 = parseInt(prompt("Introduce el primer número: "));
+            let numero2 = parseInt(prompt("Introduce el segundo número: "));
+            
+            if (numero1 > numero2) {
+                document.write("El primer número es mayor.");
+            } else if (numero2 > numero1) {
+                document.write("El segundo número es mayor.");
+            } else {
+                document.write("Los números son iguales.");
+            }
+        }
+
+        compararNumeros();
+    </script>
+</body>
+</html>
